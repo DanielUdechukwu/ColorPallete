@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/output.css">
+  <style>
+    @font-face{
+      font-family: 'JOST';
+      src: url('../Assets/Jost/Jost-VariableFont_wght.ttf');
+    }
+  </style>
+
+  <title>Color Palette</title>
+</head>
+<body class="bg-gray-900 font-[JOST] h-screen flex flex-col items-center justify-center">
+  <main class="relative">
+    <div>
+      <div class="w-[32.5rem]">
+        <div class="flex gap-4 bg-white py-4 px-4 rounded-t-lg">
+          <input class="h-10 w-16 cursor-pointer border-2 border-gray-200" type="color" name="" id="colorPicker">
+          <select name="" id="options" class="w-[15rem] px-2 rounded-lg bg-white border-2 border-gray-200 cursor-pointer font-medium">
+            <option value="" class="font-semibold">Monochrome</option>
+            <option value="" class="font-semibold">Monochrome-dark</option>
+            <option value="" class="font-semibold">Monochrome-light</option>
+            <option value="" class="font-semibold">Analogic</option>
+            <option value="" class="font-semibold">Complement</option>
+            <option value="" class="font-semibold">Analogic-complement</option>
+            <option value="" class="font-semibold">Triad</option>
+            <option value="" class="font-semibold">Quad</option>
+          </select>
+          <button id="submit" class="border-2 border-gray-200 px-2 rounded-lg font-[JOST] font-medium">Get color scheme</button>
+        </div>
+
+        <div class="flex" id="colorPalette">
+        </div>
+        <div class="flex items-center bg-white rounded-b-lg" id="hexValue">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="absolute bottom-0">
+    <p class="text-center text-gray-400">Danny.exe @<span id="date"></span></p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
