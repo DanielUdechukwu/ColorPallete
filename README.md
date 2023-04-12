@@ -4,4 +4,4 @@ Basic color pallete creator using [**thecolorapi's API**](https://www.thecolorap
 Creates a GET request with the selected color and mode as parameters and returning an 
 output of color palettes and their hex codes for use. 
 
-Preview site: [**URL**](color-paletta.netlify.app)
+Preview site: [**URL**](https://color-paletta.netlify.app/)
